@@ -11,7 +11,14 @@ export function generatePhoneNumber() {
 }
 
 export async function goToFUOMOPage(page) {
+
     await page.goto('https://fuomo.id/landing');
+
+    await page.addStyleTag({
+      content: `
+      #credential_picker_container {
+      display: none !important;}`
+    });
     await page.getByRole('button', { name: 'Masuk' }).click();
     await page.getByRole('link', { name: 'yuk daftar' }).click();
 }
