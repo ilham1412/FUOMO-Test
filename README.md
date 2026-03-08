@@ -23,7 +23,7 @@ Proyek automation testing untuk aplikasi Fuomo (https://fuomo.id). Project ini f
 
 1. **Clone repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/ilham1412/FUOMO-Test.git
 cd Fuomo-QA-Test
 ```
 
